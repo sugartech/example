@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<input type="text" id="input" value="">
+<script>
+    var input = document.getElementById("input");
+
+
+
+    for(var i=0;i<3;i++){
+       fn(i);
+    }
+
+
+    function fn(a) {
+        setTimeout(function() {
+            input.value=a;
+        }, a*1000);
+
+    };
+
+
+</script>
+</body>
+</html>
